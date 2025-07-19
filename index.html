@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexlance Beta Launch</title>
+
+  <!-- Google Fonts (GenZ Style) -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Swiper.js for Carousel -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- Lightbox CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --main-color: #4b0082;
+      --text-color: #111;
+      --bg-color: #fff;
+    }
+
+    body.dark {
+      --main-color: #00ffcc;
+      --text-color: #fff;
+      --bg-color: #111;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: all 0.3s ease;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: var(--main-color);
+      color: white;
+    }
+
+    header img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    h1 {
+      margin: 10px 0;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .toggle-btn {
+      background: white;
+      color: var(--main-color);
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .btn {
+      background: var(--main-color);
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 20px;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    .swiper {
+      width: 90%;
+      height: 400px;
+      margin: auto;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .swiper-slide img:hover {
+      transform: scale(1.03);
+    }
+
+    .testimonial {
+      max-width: 600px;
+      margin: 40px auto;
+      font-style: italic;
+      background: #eee;
+      padding: 20px;
+      border-left: 5px solid var(--main-color);
+      border-radius: 8px;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      animation: float 2s ease-in-out infinite;
+      z-index: 999;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    footer {
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      background: #f5f5f5;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.postimg.cc/Y95Wp6S0/Chat-GPT-Image-Jun-8-2025-01-38-56-PM.png" alt="Nexlance Logo" />
+    <h1>Nexlance Beta</h1>
+    <button class="toggle-btn" onclick="toggleDark()">Toggle Mode</button>
+  </header>
+
+  <div class="section">
+    <h2>Why Nexlance?</h2>
+    <p>Tired of chasing clients like it’s a second job? Or scrolling through 100 irrelevant proposals to hire one decent person? Same. That’s why we built Nexlance — not just another freelance platform, but a freedom platform.</p>
+    <p>🚀 Faster hiring. 💸 No more “Where’s my payment?” stress. 🎯 Just real work, real talent, no drama.</p>
+    <p>We’re not here to be “just another startup.” We’re building the freelance future — clean, bold, and a little rebellious. Join now, or wish you had later. 😉</p>
+    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeYsFApyWfTpru_76g7B6ULCvJp6uhYNSq97gAWA5Wva0EVQQ/viewform?usp=dialog" target="_blank">
+      Join Beta Program
+    </a>
+  </div>
+
+ <!-- Carousel -->
+<div class="section">
+  <h2>Hiring? Freelancing? <br>Do it the <span style="color: var(--main-color); font-weight: 700;">Nex</span> way</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="https://i.postimg.cc/0ytJfXbq/undraw-building-a-website-1wrp.png" data-lightbox="screens">
+          <img src="https://i.postimg.cc/0ytJfXbq/undraw-building-a-website-1wrp.png" alt="Building Website">
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="https://i.postimg.cc/LswgdqtC/undraw-freelancer-vibs.png" data-lightbox="screens">
+          <img src="https://i.postimg.cc/LswgdqtC/undraw-freelancer-vibs.png" alt="Freelancer">
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="https://i.postimg.cc/T1rDJRWk/undraw-global-team-8jok.png" data-lightbox="screens">
+          <img src="https://i.postimg.cc/T1rDJRWk/undraw-global-team-8jok.png" alt="Global Team">
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="https://i.postimg.cc/wvRJ35xY/undraw-interview-yz52.png" data-lightbox="screens">
+          <img src="https://i.postimg.cc/wvRJ35xY/undraw-interview-yz52.png" alt="Interview">
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="https://i.postimg.cc/rsLdmvY5/undraw-remote-worker-0l91.png" data-lightbox="screens">
+          <img src="https://i.postimg.cc/rsLdmvY5/undraw-remote-worker-0l91.png" alt="Remote Work">
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="https://i.postimg.cc/GmbkzsKv/undraw-secure-login-m11a.png" data-lightbox="screens">
+          <img src="https://i.postimg.cc/GmbkzsKv/undraw-secure-login-m11a.png" alt="Secure Login">
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="https://i.postimg.cc/pd6z2cHB/undraw-stripe-payments-jxnn.png" data-lightbox="screens">
+          <img src="https://i.postimg.cc/pd6z2cHB/undraw-stripe-payments-jxnn.png" alt="Stripe Payments">
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="https://i.postimg.cc/rsCDtQv3/undraw-team-page-q5am.png" data-lightbox="screens">
+          <img src="https://i.postimg.cc/rsCDtQv3/undraw-team-page-q5am.png" alt="Team Page">
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="https://i.postimg.cc/FztSSf1d/undraw-work-from-anywhere-1kdu.png" data-lightbox="screens">
+          <img src="https://i.postimg.cc/FztSSf1d/undraw-work-from-anywhere-1kdu.png" alt="Work From Anywhere">
+        </a>
+      </div>
+    </div>
+  </div>
+</div> 
+<!-- WHAT’S THE BETA VERSION? -->
+<section class="px-6 py-16 bg-gray-50 text-gray-800">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-4">What’s the Beta Version?</h2>
+    <p class="text-lg leading-relaxed text-gray-700 text-center">
+        Welcome to our slightly chaotic but deeply charming beta — where stuff works (mostly), bugs exist (temporarily), and your feedback matters (a lot).
+    </p>
+    <p class="text-lg mt-4 text-gray-700 text-center">
+      This isn’t some boring “early access.” You’re literally helping shape the next-gen freelance platform before it hits mainstream.
+    </p>
+    <div class="mt-6 flex justify-center">
+      <ul class="space-y-3 text-gray-700 text-lg text-center">
+        <li>🧪 You’ll see experiments. And probably some typos. Deal with it 😎</li>
+        <li>🛠️ We’re still building — but key features like hiring, applying, and profiles? Already smooth af.</li>
+        <li>🎉 You get bragging rights forever: “I used Nexlance before it was cool.”</li>
+      </ul>
+    </div>
+    <p class="text-lg mt-6 text-gray-700 font-medium" text-center>
+      So hop in, mess around, and tell us what sucks — we’ll fix it (probably).
+    </p>
+  </div>
+</section>
+
+  <!-- Testimonials -->
+  <div class="section">
+    <h2>What Early Users Say</h2>
+    <div class="testimonial">
+      “Nexlance matched me with 3 clients in 2 days. No delay, no headache.”
+    </div>
+    <div class="testimonial">
+      “Finally a platform that actually cares about freelancers!”
+    </div>
+  </div>
+
+  <a href="https://wa.me/917906692688" class="whatsapp" title="Chat on WhatsApp">💬</a>
+
+  <footer>
+    © 2025 Nexlance • Made with 💜 for creators and clients.              
+    E-mail - aashishshinghvk18@gmail.com
+    Phone - +91 7906692688
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- Lightbox -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+  <script>
+    const toggleDark = () => document.body.classList.toggle('dark');
+
+    const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 1,
+      spaceBetween: 20,
+    });
+  </script>
+</body>
+</html>
